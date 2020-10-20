@@ -1,0 +1,10 @@
+KnightProg : KnightMain.o KnightUtils.o 
+	gcc -o KnightProg KnightMain.o KnightUtils.o 
+	
+KnightMain.o : KnightMain.c KnightMoves.h
+	gcc -c -g KnightMain.c
+KnightUtils.o : KnightUtils.c KnightMoves.h
+	gcc -c -g KnightUtils.c
+
+clean :
+	del KnightProg.exe KnightMain.o KnightUtils.o 
