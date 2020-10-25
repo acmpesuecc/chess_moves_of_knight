@@ -6,7 +6,7 @@ typedef struct Position
 	int num_pos;		//Position given by the user converted into integer form
 	int num_of_knight_next; //Number of next knight positions
 	int knight_next[8]; //Integer array consisting of next knight moves
-}Position;
+} Position;
 
 /*Struct to define the hash table*/
 typedef struct Hash
